@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>유병현 · 자유로운 지성, 시대를 여는 고대</title>
+<meta name="description" content="고려대학교 제22대 총장 후보 유병현. 나답게, 다함께, 더높게. 여섯 가지 약속과 일곱 가지 질문.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#0a0706">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif+KR:wght@200;300;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="glbg" aria-hidden="true"></div>
+<canvas id="gl" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="nav-id" href="#hero" aria-label="처음으로">
+    <img src="assets/i/crest_w.png" alt="" width="20" height="27">
+    <span>유병현</span>
+  </a>
+  <span class="nav-ch" id="navCh" aria-hidden="true"></span>
+  <div class="nav-act">
+    <button id="snd" type="button" aria-pressed="false"><i aria-hidden="true"></i><span>소리</span></button>
+    <a href="https://byunghyun.kr" target="_blank" rel="noopener">공약집</a>
+  </div>
+  <div class="nav-bar" aria-hidden="true"><b id="bar"></b></div>
+</header>
+
+<main>
+
+<!-- 오프닝: 롱테이크 드론 -->
+<section id="hero" class="pin" data-pin="hero" data-ch="" style="--h:260">
+  <div class="stick">
+    <div class="hero-frame" id="heroFrame">
+      <video data-v="hero" data-always muted loop playsinline poster="assets/v/hero.jpg"></video>
+      <div class="scrim scrim-hero"></div>
+    </div>
+    <div class="bar-t" id="barT"></div>
+    <div class="bar-b" id="barB"></div>
+    <div class="open-line" id="openLine"></div>
+
+    <div class="hero-title" id="heroTitle">
+      <p class="kicker">고려대학교 제22대 총장 후보</p>
+      <h1>자유로운 지성,<br>시대를 여는 고대</h1>
+      <p class="fine">FINE – KU <em>Free Intelligence, a New Era</em></p>
+      <p class="name">유 병 현</p>
+    </div>
+    <p class="hero-q" id="heroQ">지금 고려대학교는<br>어디를 향해 가고 있습니까?</p>
+    <div class="scroll-cue" id="cue" aria-hidden="true"><span>스크롤</span><i></i></div>
+  </div>
+</section>
+
+<!-- 시대 -->
+<section id="era" class="pin dark" data-pin="era" data-ch="질문" style="--h:240">
+  <div class="stick">
+    <video class="full" data-v="era" muted loop playsinline poster="assets/v/era.jpg"></video>
+    <div class="scrim"></div>
+    <div class="center seq">
+      <p class="say" data-a="-1" data-b=".36">등록금 동결과 코로나를<br>함께 견뎌 낸 우리 대학은,</p>
+      <p class="say" data-a=".38" data-b=".68">이제 AI라는<br>더 큰 전환 앞에 서 있습니다.</p>
+      <p class="say quiet" data-a=".70" data-b="2">AI가 수많은 답을 대신 만들어 주는 시대에는<br>대학이 존재하는 이유를 다시 물을 수밖에 없습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 후보 -->
+<section id="person" class="paper" data-ch="후보" data-nav="light">
+  <div class="person-grid">
+    <figure class="person-main" data-rise>
+      <img src="assets/i/cand.webp" alt="유병현 후보" loading="lazy">
+    </figure>
+    <div class="person-copy">
+      <p class="label" data-rise>존경하고 사랑하는 고대 가족 여러분</p>
+      <h2 data-rise>저는 법학을 가르치고<br>연구해 온 교수입니다.</h2>
+      <ol class="years">
+        <li data-rise><b>1986</b><span>고려대학교 법과대학 졸업</span></li>
+        <li data-rise><b>1994</b><span>민사소송법 분야 첫 법학박사</span></li>
+        <li data-rise><b>2001</b><span>모교로 돌아옴</span></li>
+        <li data-rise><b>2012<small>–15</small></b><span>기획예산처장, 감사실장</span></li>
+        <li data-rise><b>2015<small>–19</small></b><span>대외협력처장, 기금기획본부장</span></li>
+      </ol>
+    </div>
+  </div>
+  <div class="person-both">
+    <figure data-rise><img src="assets/i/cand2.webp" alt="의료분쟁조정법 학술대회에서 발표하는 유병현 후보" loading="lazy"></figure>
+    <blockquote data-rise>
+      연구자가 무엇에 막히고<br>행정이 어디에서 멈추는지,<br>
+      <em>교수의 자리와 본부의 자리</em><br>양쪽에서 보았습니다.
+    </blockquote>
+    <figure data-rise><img src="assets/i/cand3.webp" alt="토론회에서 발언하는 유병현 후보" loading="lazy"></figure>
+  </div>
+  <p class="person-end" data-rise>법학자의 균형 감각으로 뜻을 모으고,<br>행정가의 실행력으로 약속을 실현하겠습니다.</p>
+</section>
+
+<!-- 세 방향 -->
+<section id="dirs" class="pin dark" data-pin="dirs" data-ch="세 가지 방향" style="--h:420">
+  <div class="stick">
+    <div class="dir" data-stack="0">
+      <video class="full" data-v="dir1" data-gated muted loop playsinline poster="assets/v/dir1.jpg"></video>
+      <div class="scrim"></div>
+      <div class="center"><p class="dir-n">대학의 본질 회복</p><h2 class="dir-w">나답게</h2>
+        <p class="dir-t">외형과 순위를 좇기보다,<br>교육과 연구라는 본연의 기능에 충실하겠습니다.</p></div>
+    </div>
+    <div class="dir" data-stack="1">
+      <video class="full" data-v="dir2" data-gated muted loop playsinline poster="assets/v/dir2.jpg"></video>
+      <div class="scrim"></div>
+      <div class="center"><p class="dir-n">조화로운 다양성</p><h2 class="dir-w">다함께</h2>
+        <p class="dir-t">서로 다른 학문과 구성원이<br>각자의 가치를 인정받는 대학을 만들겠습니다.</p></div>
+    </div>
+    <div class="dir" data-stack="2">
+      <video class="full" data-v="dir3" data-gated muted loop playsinline poster="assets/v/dir3.jpg"></video>
+      <div class="scrim"></div>
+      <div class="center"><p class="dir-n">한계를 뛰어넘는 도약</p><h2 class="dir-w">더높게</h2>
+        <p class="dir-t">예산과 낡은 제도, 낡은 관행에 가로막혀<br>혁신적인 도전이 멈추지 않게 하겠습니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 여섯 약속: 3D 석판 -->
+<section id="promises" class="pin gl" data-pin="promises" data-gl="mono" data-ch="여섯 가지 약속" style="--h:760">
+  <div class="stick">
+    <p class="pr-intro" id="prIntro">저는 총장 후보자로서<br>다음의 여섯 가지를 약속합니다.</p>
+    <div class="pr-list" id="prList">
+      <article class="pr"><p class="pr-n"><b>첫째</b></p><h3>도전적, 창의적 연구를 위한 연구기금을 조성하겠습니다.</h3>
+        <ul><li>장학금, 건축 중심에서 연구비 중심으로 기부금 구조를 전환</li><li>전임교원 약 1,800명 기준 1인당 1억 원 규모 조성 목표</li><li>단과대학별 연구자 중심의 자율적 연구비 집행체계 마련</li></ul></article>
+      <article class="pr"><p class="pr-n"><b>둘째</b></p><h3>AI 시대에 걸맞은 대학 본연의 교육을 확립하겠습니다.</h3>
+        <ul><li>AI를 활용한 창의적이고 독창적인 교육 지원</li><li>대학 본연의 사명에 충실한 사고력과 판단력 중심 교육 강화</li><li>문제 해결능력과 사회기여를 키우는 자유로운 지성 교육 확대</li></ul></article>
+      <article class="pr"><p class="pr-n"><b>셋째</b></p><h3>학생이 원하는대로 배우고 생활할 수 있는 캠퍼스를 만들겠습니다.</h3>
+        <ul><li>수요자(학생) 중심의 자기주도형 전공설계 지원 및 상담체계 구축</li><li>학비 지원을 넘어서 생활비 지원으로 장학금 패러다임의 전환</li><li>1인 1실 기숙사 확대, 주거시설 인증제</li></ul></article>
+      <article class="pr"><p class="pr-n"><b>넷째</b></p><h3>직원이 전문성을 키우며 행복하게 일할 수 있는 일터를 만들겠습니다.</h3>
+        <ul><li>행정역량TF의 구성과 이를 통한 행정체계의 정교화와 안정화</li><li>체계적 · 지속적 교육 · 훈련, 일과 삶의 균형을 보장하는 근무 형태 확대</li><li>상호 신뢰와 존중에 기반한 협력적 노사문화의 정착</li></ul></article>
+      <article class="pr"><p class="pr-n"><b>다섯째</b></p><h3>고려대학교 브랜드를 세계 수준으로 올려놓겠습니다.</h3>
+        <ul><li>세계 최고 수준의 대학, 기업, 국제기구와 글로벌 파트너십 강화</li><li>3개 고대병원의 특성화를 통한 대학병원 브랜드 이미지 강화</li><li>해외 파견(outgoing)과 유치(incoming)의 결합을 통한 시너지 창출</li></ul></article>
+      <article class="pr"><p class="pr-n"><b>여섯째</b></p><h3>사회에 공헌하고 학문 공동체를 선도하는 대학을 만들겠습니다.</h3>
+        <ul><li>공적 책임을 다하는 대학의 사회적 역할(USR) 강화</li><li>국가와 사회에 대한 실질적 기여의 확대</li><li>전 세계에 흩어진 교우들이 자부심을 느낄 수 있는 선도적 품격의 확립</li></ul></article>
+    </div>
+    <p class="pr-count" id="prCount" aria-hidden="true"></p>
+  </div>
+</section>
+
+<!-- 구성원에게 -->
+<section id="vows" class="ink" data-ch="여섯 가지 약속">
+  <p class="vow" data-rise><span>교수님께는</span> 연구와 교육에 온전히 몰입할 수 있는 환경을,</p>
+  <p class="vow" data-rise><span>직원 여러분께는</span> 전문성을 존중받고 보람찬 성장의 경로가 열리는 일터를,</p>
+  <p class="vow" data-rise><span>학생 여러분께는</span> 일상의 걱정 없이 마음껏 배우고 도전할 수 있는 캠퍼스를 약속드립니다.</p>
+  <p class="vow-next" data-rise>이 약속이 구성원 한 분 한 분께 어떤 변화가 되는지,<br>일곱 가지 질문에 직접 답하겠습니다.</p>
+</section>
+
+<!-- Q1: 1,800개의 기둥 -->
+<section id="q1" class="pin gl" data-pin="q1" data-gl="pillars" data-ch="일곱 가지 질문" style="--h:460">
+  <div class="stick">
+    <div class="center seq">
+      <div data-a="-1" data-b=".2"><p class="q-n">Q1 <span>교수</span></p><p class="q-t">지금 고려대학교가 가장 필요로 하는 일은<br>무엇입니까?</p></div>
+      <p class="say" data-a=".22" data-b=".44">연구경쟁력을 획기적으로 높이고,<br>그 성과가 교육으로 이어지는 선순환을 만드는 것입니다.</p>
+      <div data-a=".46" data-b=".76" class="fund">
+        <p class="fund-big">1억 원</p>
+        <p class="fund-sub">전임교원 1인당, 단과대별 연구기금 단계적 조성 목표<br>성과 보상이 아닌 조건 없는 기본연구비 신설</p>
+        <p class="fund-note">기둥 하나가 교원 한 사람 · 약 <b data-count="1800" data-from=".46" data-to=".66">1,800</b>명 기준</p>
+      </div>
+      <p class="say strong" data-a=".78" data-b="2">연구의 기본은 대학이 책임지고,<br>연구의 방향은 연구자가 결정하도록 하겠습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Q2–Q7 -->
+<section id="qs" class="pin dark" data-pin="qs" data-ch="일곱 가지 질문" style="--h:840">
+  <div class="stick">
+    <div class="qp" data-stack="0">
+      <video class="full" data-v="q2" data-gated muted loop playsinline poster="assets/v/q2.jpg"></video><div class="scrim"></div>
+      <div class="center">
+        <div class="q-head"><p class="q-n">Q2 <span>전 구성원</span></p><p class="q-t">AI 시대에 고려대학교를 위해<br>어떤 일을 하시겠습니까?</p></div>
+        <div class="q-ans"><p>총장 직속 AI 혁신 전략위원회를 설치하여 AI 관련 정책과 투자를 유기적으로 설계하고 효율적으로 집행하겠습니다.</p>
+          <ul class="chips"><li>AI 연구 인프라 확충</li><li>AI 교육혁신센터</li><li>AI 기반 행정혁신</li></ul></div>
+      </div>
+    </div>
+    <div class="qp" data-stack="1">
+      <video class="full" data-v="q3" data-gated muted loop playsinline poster="assets/v/q3.jpg"></video><div class="scrim"></div>
+      <div class="center">
+        <div class="q-head"><p class="q-n">Q3 <span>학생</span></p><p class="q-t">학생들을 위해서<br>어떤 일을 하시겠습니까?</p></div>
+        <div class="q-ans"><p>학생은 대학의 존재 이유이자 미래입니다. 무엇보다 아무 걱정 없이 원하는 공부를 마음껏 할 수 있는 환경을 만들겠습니다.</p>
+          <ul class="chips"><li>생활비 중심 장학금</li><li>기숙사 1인실</li><li>하숙 · 원룸 인증제</li><li>서울 순환셔틀 전기 저상버스</li><li>개운산 숲길</li><li>정오의 작은 음악회</li></ul></div>
+      </div>
+    </div>
+    <div class="qp" data-stack="2">
+      <video class="full" data-v="q4" data-gated muted loop playsinline poster="assets/v/q4.jpg"></video><div class="scrim"></div>
+      <div class="center">
+        <div class="q-head"><p class="q-n">Q4 <span>직원</span></p><p class="q-t">직원들을 위해서<br>어떤 일을 하시겠습니까?</p></div>
+        <div class="q-ans"><p>직원 여러분의 전문성과 헌신이 존중받는 대학을 만들겠습니다. AI 도입은 인력 대체가 아니라, 더 가치 있는 일에 집중하기 위한 것입니다.</p>
+          <ul class="chips"><li>공정하고 예측 가능한 인사제도</li><li>방학집중휴무제 · 유연근무제</li><li>AI 혁신과 행정역량TF</li></ul></div>
+      </div>
+    </div>
+    <div class="qp" data-stack="3">
+      <video class="full" data-v="q5" data-gated muted loop playsinline poster="assets/v/q5.jpg"></video><div class="scrim"></div>
+      <div class="center">
+        <div class="q-head"><p class="q-n">Q5 <span>교우</span></p><p class="q-t">교우들을 위해서<br>어떤 일을 하시겠습니까?</p></div>
+        <div class="q-ans"><p>고려대학교에는 입학은 있어도 졸업은 없다는 말이 있습니다. 교우를 후원자가 아니라, 대학 발전을 함께 이끄는 동반자로 모시겠습니다.</p>
+          <ul class="chips"><li>교우회장을 자문위원장으로 하는 발전자문단</li><li>교우기업 연계 인턴십 · 취업</li></ul></div>
+      </div>
+    </div>
+    <div class="qp" data-stack="4">
+      <video class="full" data-v="q6" data-gated muted loop playsinline poster="assets/v/q6.jpg"></video><div class="scrim"></div>
+      <div class="center">
+        <div class="q-head"><p class="q-n">Q6 <span>외국인 학생</span></p><p class="q-t">외국인 학생들을 위해서<br>어떤 계획을 가지고 있습니까?</p><p class="q-en">What are your plans for international students?</p></div>
+        <div class="q-ans"><p>이제는 외국인 학생의 양적 확대를 넘어, 교육의 질을 높일 때입니다.</p>
+          <ul class="chips"><li>Global Service Center 고도화</li><li>튜터링과 한국어 교육</li><li>AI 동시통역 캠퍼스</li><li>외국인 학생의 목소리 반영</li></ul></div>
+      </div>
+    </div>
+    <div class="qp" data-stack="5">
+      <video class="full" data-v="q7" data-gated muted loop playsinline poster="assets/v/q7.jpg"></video><div class="scrim"></div>
+      <div class="center">
+        <div class="q-head"><p class="q-n">Q7 <span>교수</span></p><p class="q-t">우수한 교원 확보를 위해<br>어떤 방안을 가지고 있습니까?</p></div>
+        <div class="q-ans"><p>좋은 인재를 뽑는 데서 끝나지 않고, 오래 머물며 성장할 수 있는 환경을 만들겠습니다.</p>
+          <ul class="chips"><li>학과의 자율적 인재 확보</li><li>기본배정과 특별배정</li><li>세계적인 석학 특별채용</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 실행: 크림슨 -->
+<section id="proof" class="pin gl" data-pin="proof" data-gl="proof" data-ch="실행" style="--h:640">
+  <div class="stick">
+    <div class="center seq proof-seq">
+      <p class="say big" data-a="-1" data-b=".14">약속은 실행으로<br>증명해야 합니다.</p>
+      <div data-a=".16" data-b=".36" class="pf">
+        <p class="pf-k">기획예산처장 · 학교의 안살림</p>
+        <p class="pf-big">QS 100위</p>
+        <p class="pf-t">이삭줍기 작전으로 고려대의 역량이 제대로 반영되는<br>시스템을 만들어, 진입하는 기반을 구축했습니다.</p>
+      </div>
+      <div data-a=".38" data-b=".56" class="pf">
+        <p class="pf-k">대외협력처장 · 학교의 바깥살림</p>
+        <p class="pf-big"><span data-count="1100" data-from=".39" data-to=".5">1,100</span>억 원</p>
+        <p class="pf-t">2017년, 고려대학교 역사상 처음으로<br>한 해 모금액 1,100억 원을 돌파하는 데 기여했습니다.</p>
+      </div>
+      <div data-a=".6" data-b=".8" class="pf pf-low">
+        <p class="pf-big sm"><span data-count="5000" data-from=".58" data-to=".72">5000</span> 교우</p>
+        <p class="pf-t">KU PRIDE CLUB으로 그 마음을 모았습니다.</p>
+      </div>
+      <div data-a=".82" data-b="2" class="pf pf-ring">
+        <p class="pf-big"><span data-count="70" data-from=".82" data-to=".94">70</span>%</p>
+        <p class="pf-t">총장이 되면 업무의 70% 이상을<br>모금에 쏟겠습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 세 캠퍼스 -->
+<section id="axes" class="paper" data-ch="실행" data-nav="light">
+  <h2 data-rise>서울과 세종은 우열이 아닌 두 성장축으로,<br>의료원은 2028년 100주년을 새로운 도약의 원년으로.</h2>
+  <div class="axes">
+    <figure data-rise><img src="assets/i/seoul.webp" alt="서울 캠퍼스 야경" loading="lazy"><figcaption>서울</figcaption></figure>
+    <figure data-rise><img src="assets/i/sejong.webp" alt="세종캠퍼스 석조 아치 조형물" loading="lazy"><figcaption>세종</figcaption></figure>
+    <figure data-rise><img src="assets/i/med.webp" alt="고려대학교 의료원 병원 전경" loading="lazy"><figcaption>의료원</figcaption></figure>
+  </div>
+  <p class="axes-end" data-rise>그리고 취임 직후 3개월 동안<br><b>모든 구성원의 의견을 먼저 듣겠습니다.</b></p>
+</section>
+
+<!-- 맺음 -->
+<section id="ending" class="pin dark" data-pin="ending" data-ch="맺음" style="--h:520">
+  <div class="stick">
+    <div class="end" data-stack="0">
+      <video class="full" data-v="end1" data-gated muted loop playsinline poster="assets/v/end1.jpg"></video><div class="scrim"></div>
+      <div class="center seq" data-local="0">
+        <p class="say" data-a="-1" data-b=".3">저는 헌신과 존중의 리더십을<br>실천하는 총장이 되겠습니다.</p>
+        <p class="say" data-a=".33" data-b=".64">힘든 일에는 가장 먼저 나서고,<br>결실을 나눌 때는 구성원을 먼저 생각하겠습니다.</p>
+        <p class="say" data-a=".67" data-b="2">10년 뒤, 그리고 50년 뒤의<br>고려대학교를 먼저 내다보겠습니다.</p>
+      </div>
+    </div>
+    <div class="end" data-stack="1">
+      <img class="full kb" src="assets/i/inchon.webp" alt="밤의 본관과 인촌 동상" loading="lazy"><div class="scrim"></div>
+      <div class="center"><p class="han">公先私後</p><p class="say">인촌 선생의 공선사후 정신을 가슴에 새기며,</p></div>
+    </div>
+    <div class="end" data-stack="2">
+      <img class="full kb" src="assets/i/night.webp" alt="밤 호수에 비친 본관" loading="lazy"><div class="scrim"></div>
+      <div class="center"><p class="say final">교가의 마지막 구절처럼<br><em>영원히 빛나는 고려대학교</em>를<br>여러분과 함께 반드시 만들어 가겠습니다.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="endcard">
+  <img class="crest" src="assets/i/crest_w.png" alt="고려대학교 교표" loading="lazy">
+  <p class="end-title">자유로운 지성,<br>시대를 여는 고대</p>
+  <p class="end-name">제22대 총장 후보 <b>유 병 현</b></p>
+  <div class="end-links">
+    <a href="https://byunghyun.kr" target="_blank" rel="noopener">공약집과 단과대별 발전계획</a>
+  </div>
+  <p class="thanks">감사합니다.</p>
+</footer>
+
+<audio id="bgm" src="assets/bgm.mp3" loop preload="none"></audio>
+<script src="vendor/lenis.min.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
